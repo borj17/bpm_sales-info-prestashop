@@ -2,6 +2,8 @@
 
 ¡Bienvenido al repositorio del módulo de estadísticas de ventas para PrestaShop! Este módulo ha sido desarrollado por **Borja Pérez** con mucho amor, y está diseñado para ser compatible con **PrestaShop 1.7** y **PrestaShop 8.2**.
 
+!(preview.png)
+
 ## Descripción
 
 Este módulo proporciona información detallada sobre las ventas en diferentes períodos de tiempo, permitiendo a los administradores de la tienda realizar un seguimiento fácil y eficiente del rendimiento de sus ventas. Además, incluye estadísticas sobre carritos abandonados, facilitando así la identificación de oportunidades para mejorar la conversión.
@@ -23,7 +25,7 @@ Este módulo proporciona información detallada sobre las ventas en diferentes p
 
 ## Instalación
 
-1. Descarga la última versión de este módulo en el apartado de releases en este repositorio.
+1. Descarga el fichero bpm_salesinfo.zip del apartado [releases](https://github.com/borj17/bpm_sales-info-prestashop/releases) en este repositorio.
 2. En el administrador de tu tienda, en el apartado módulos, sube el zip descargado.
 3. Se habrá creado un acceso rápido en el menú lateral izquierdo para acceder a los datos del módulo.
 
