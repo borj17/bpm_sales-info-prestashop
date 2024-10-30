@@ -2,7 +2,7 @@
 
 ¡Bienvenido al repositorio del módulo de estadísticas de ventas para PrestaShop! Este módulo ha sido desarrollado por **Borja Pérez** con mucho amor, y está diseñado para ser compatible con **PrestaShop 1.7** y **PrestaShop 8.2**.
 
-!(https://raw.githubusercontent.com/borj17/bpm_sales-info-prestashop/refs/heads/main/preview.png)
+![Preview del panel en un PrestaShop 8.1.7](https://raw.githubusercontent.com/borj17/bpm_sales-info-prestashop/refs/heads/main/preview.png)
 
 ## Descripción
 
