@@ -44,12 +44,17 @@ body {
                     font-weight: 700;
                     font-size: 22px;
                 }
+                .previous-period-text {
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
                 .change-percentage {
                     font-weight: bold;
                     font-size: 20px;
                 }
                 .green-progress {
-                    color: greenyellow;
+                    color: #81d100;
                 }
                 .red-progress {
                     color: red;
