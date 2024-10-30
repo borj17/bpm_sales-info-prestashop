@@ -3,37 +3,37 @@
     <div class="sales-info-container">
         <div class="sales-info-box">
             <h3>{l s='Sales today' mod='bpm_salesinfo'}</h3>
-            <p>{if $ventasHoy}{$ventasHoy} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Yesterday' mod='bpm_salesinfo'}: {if $ventasAyer}{$ventasAyer} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioHoy > 0}green-progress{elseif $cambioHoy < 0}red-progress{/if}">
-                ({$cambioHoy}% {if $cambioHoy > 0}↑{else}↓{/if})
+            <p>{if $salesToday}{$salesToday} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Yesterday' mod='bpm_salesinfo'}: {if $salesYesterday}{$salesYesterday} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $salesImprovementToday > 0}green-progress{elseif $salesImprovementToday < 0}red-progress{/if}">
+                ({$salesImprovementToday}% {if $salesImprovementToday > 0}↑{else}↓{/if})
             </div>
         </div>
         
         <div class="sales-info-box">
             <h3>{l s='Sales this week' mod='bpm_salesinfo'}</h3>
-            <p>{if $ventasSemana}{$ventasSemana} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Last week' mod='bpm_salesinfo'}: {if $ventasSemanaPasada}{$ventasSemanaPasada} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioSemana > 0}green-progress{elseif $cambioSemana < 0}red-progress{/if}">
-                ({$cambioSemana}% {if $cambioSemana > 0}↑{else}↓{/if})
+            <p>{if $salesWeek}{$salesWeek} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Last week' mod='bpm_salesinfo'}: {if $salesLastWeek}{$salesLastWeek} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $salesImprovementWeek > 0}green-progress{elseif $salesImprovementWeek < 0}red-progress{/if}">
+                ({$salesImprovementWeek}% {if $salesImprovementWeek > 0}↑{else}↓{/if})
             </div>
         </div>
         
         <div class="sales-info-box">
             <h3>{l s='Sales this month' mod='bpm_salesinfo'}</h3>
-            <p>{if $ventasMes}{$ventasMes} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Last month' mod='bpm_salesinfo'}: {if $ventasMesPasado}{$ventasMesPasado} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioMes > 0}green-progress{elseif $cambioMes < 0}red-progress{/if}">
-                ({$cambioMes}% {if $cambioMes > 0}↑{else}↓{/if})
+            <p>{if $salesMonth}{$salesMonth} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Last month' mod='bpm_salesinfo'}: {if $salesLastMonth}{$salesLastMonth} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $salesImprovementMonth > 0}green-progress{elseif $salesImprovementMonth < 0}red-progress{/if}">
+                ({$salesImprovementMonth}% {if $salesImprovementMonth > 0}↑{else}↓{/if})
             </div>
         </div>
         
         <div class="sales-info-box">
             <h3>{l s='Sales this year' mod='bpm_salesinfo'}</h3>
-            <p>{if $ventasYear}{$ventasYear} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Last year' mod='bpm_salesinfo'}: {if $ventasYearPasado}{$ventasYearPasado} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioYear > 0}green-progress{elseif $cambioYear < 0}red-progress{/if}">
-                ({$cambioYear}% {if $cambioYear > 0}↑{else}↓{/if})
+            <p>{if $salesYear}{$salesYear} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Last year' mod='bpm_salesinfo'}: {if $salesLastYear}{$salesLastYear} €{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $salesImprovementYear > 0}green-progress{elseif $salesImprovementYear < 0}red-progress{/if}">
+                ({$salesImprovementYear}% {if $salesImprovementYear > 0}↑{else}↓{/if})
             </div>
         </div>
     </div>
@@ -45,37 +45,37 @@
     <div class="sales-info-container">
         <div class="sales-info-box">
             <h3>{l s='Abandoned carts today' mod='bpm_salesinfo'}</h3>
-            <p>{if $carritosHoy}{$carritosHoy}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Yesterday' mod='bpm_salesinfo'}: {if $carritosAyer}{$carritosAyer}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioCarritosHoy > 0}green-progress{elseif $cambioCarritosHoy < 0}red-progress{/if}">
-                ({$cambioCarritosHoy}% {if $cambioCarritosHoy > 0}↓{else}↑{/if})
+            <p>{if $abandonedCartsToday}{$abandonedCartsToday}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Yesterday' mod='bpm_salesinfo'}: {if $abandonedCartsYesterday}{$abandonedCartsYesterday}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $abandonedCartsImprovementToday > 0}green-progress{elseif $abandonedCartsImprovementToday < 0}red-progress{/if}">
+                ({$abandonedCartsImprovementToday}% {if $abandonedCartsImprovementToday > 0}↓{else}↑{/if})
             </div>
         </div>
 
         <div class="sales-info-box">
             <h3>{l s='Abandoned carts this week' mod='bpm_salesinfo'}</h3>
-            <p>{if $carritosSemana}{$carritosSemana}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Last week' mod='bpm_salesinfo'}: {if $carritosSemanaPasada}{$carritosSemanaPasada}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioCarritosSemana > 0}green-progress{elseif $cambioCarritosSemana < 0}red-progress{/if}">
-                ({$cambioCarritosSemana}% {if $cambioCarritosSemana > 0}↓{else}↑{/if})
+            <p>{if $abandonedCartsWeek}{$abandonedCartsWeek}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Last week' mod='bpm_salesinfo'}: {if $abandonedCartsLastWeek}{$abandonedCartsLastWeek}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $abandonedCartsImprovementWeek > 0}green-progress{elseif $abandonedCartsImprovementWeek < 0}red-progress{/if}">
+                ({$abandonedCartsImprovementWeek}% {if $abandonedCartsImprovementWeek > 0}↓{else}↑{/if})
             </div>
         </div>
 
         <div class="sales-info-box">
             <h3>{l s='Abandoned carts this month' mod='bpm_salesinfo'}</h3>
-            <p>{if $carritosMes}{$carritosMes}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Last month' mod='bpm_salesinfo'}: {if $carritosMesPasado}{$carritosMesPasado}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioCarritosMes > 0}green-progress{elseif $cambioCarritosMes < 0}red-progress{/if}">
-                ({$cambioCarritosMes}% {if $cambioCarritosMes > 0}↓{else}↑{/if})
+            <p>{if $abandonedCartsMonth}{$abandonedCartsMonth}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Last month' mod='bpm_salesinfo'}: {if $abandonedCartsLastMonth}{$abandonedCartsLastMonth}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $abandonedCartsImprovementMonth > 0}green-progress{elseif $abandonedCartsImprovementMonth < 0}red-progress{/if}">
+                ({$abandonedCartsImprovementMonth}% {if $abandonedCartsImprovementMonth > 0}↓{else}↑{/if})
             </div>
         </div>
         
         <div class="sales-info-box">
             <h3>{l s='Carts abandoned this year' mod='bpm_salesinfo'}</h3>
-            <p>{if $carritosYear}{$carritosYear}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <p class="previous-period-text">{l s='Last year' mod='bpm_salesinfo'}: {if $carritosYearPasado}{$carritosYearPasado}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
-            <div class="change-percentage {if $cambioCarritosYear > 0}green-progress{elseif $cambioCarritosYear < 0}red-progress{/if}">
-                ({$cambioCarritosYear}% {if $cambioCarritosYear > 0}↓{else}↑{/if})
+            <p>{if $abandonedCartsYear}{$abandonedCartsYear}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <p class="previous-period-text">{l s='Last year' mod='bpm_salesinfo'}: {if $abandonedCartsLastYear}{$abandonedCartsLastYear}{else}{l s='No data yet' mod='bpm_salesinfo'}{/if}</p>
+            <div class="change-percentage {if $abandonedCartsImprovementYear > 0}green-progress{elseif $abandonedCartsImprovementYear < 0}red-progress{/if}">
+                ({$abandonedCartsImprovementYear}% {if $abandonedCartsImprovementYear > 0}↓{else}↑{/if})
             </div>
         </div>
     </div>
